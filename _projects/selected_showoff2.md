@@ -1,7 +1,7 @@
 ---
 title: "Selected two"
 teaser: /assets/img/Platescape2_strip.png
-tags: art dsp selected
+tags: art selected
 ---
 
 # This is another SELECTED project show-off
