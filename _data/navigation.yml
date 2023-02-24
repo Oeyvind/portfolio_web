@@ -1,0 +1,17 @@
+main:
+  - title: "News"
+    url: /news/
+  - title: "Projects"
+    url: /projects/
+  - title: "Selected"
+    url: /selected/
+
+project_nav:
+  - title: Projects
+    children:
+      - title: "Art and Music"
+        url: /projects/art_music/
+      - title: "Audio Processing"
+        url: /projects/dsp/
+      - title: "Writing"
+        url: /projects/writing/

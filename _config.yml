@@ -1,0 +1,110 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Oeyvind Brandtsegg Portfolio
+email: obrandts@gmail.com
+name: Oeyvind Brandtsegg
+description: >- # this means to ignore newlines until "baseurl:"
+  Oeyvind Brandtsegg projects, research, productions and other items of interest.
+baseurl: /oyvinbra/portfolio # the subpath of your site, e.g. /blog
+url: https://folk.ntnu.no # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  Oeyvind
+teaser: /assets/img/pfbd-SBL16_wide1.jpg
+logo: /assets/img/B_logo.png
+#masthead_title: "Mytitle"
+atom_feed:
+  hide: true
+search: true
+lunr:
+  search_within_pages: true
+
+  
+# Build settings
+theme: minimal-mistakes-jekyll
+  #minima
+  #jekyll-theme-clean-blog
+minimal_mistakes_skin: "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+collections:
+  projects:
+    output: true
+    #permalink: /:collection/:path/
+  #selected:
+    #output: true
+    #permalink: /:collection/:path/
+
+include: ["_pages"]
+
+paginate: 5
+  
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-data
+  
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: false
+      comments: false
+      share: false
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single_tagged
+      author_profile: false
+      share: false
+  - scope:
+      path: ""
+      type: selected
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
