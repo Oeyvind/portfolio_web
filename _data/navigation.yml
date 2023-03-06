@@ -10,8 +10,10 @@ project_nav:
   - title: Projects
     children:
       - title: "Art and Music"
-        url: /projects/art_music/
+        url: /projects/soundart_music/
       - title: "Audio Processing"
         url: /projects/dsp/
+      - title: "Music releases"
+        url: /projects/releases/
       - title: "Writing"
         url: /projects/writing/
